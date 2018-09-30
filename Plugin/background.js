@@ -1,6 +1,12 @@
 "use strict"
-alert("test");
+
+var url_to_search = "using-npm-to-install-or-update-required-packages-just-like-bundler-for-rubygems";
+
 chrome.browserAction.onClicked.addListener(function(tab) {
-    var newURL = "http://localhost:8000/radarchart.html";
-    chrome.tabs.create({ url: newURL });
+    chrome.history.search({text:url_to_search},callback);
 });
+
+function callback(result){
+    var newURL = "http://localhost:8000/radarchart.html?length" + result.length;
+    chrome.tabs.create({ url: newURL });
+}
