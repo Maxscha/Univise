@@ -7,6 +7,6 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 });
 
 function callback(result){
-    var newURL = "http://localhost:8000/radarchart.html?length" + result.length;
+    var newURL = "http://localhost:8000/?length=" + result.length;
     chrome.tabs.create({ url: newURL });
 }

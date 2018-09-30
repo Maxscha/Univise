@@ -10,25 +10,18 @@
                 "based":"www.morgenpost.de"
             },
             {
-                "img": "/pictures/b1.png",
-                "title": "Global Master of Business Administration (Global MBA)",
-                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
-                "url": "https://www.coursera.org/degrees/global-mba-macquarie",
-                "based":"www.morgenpost.de"
+                "img": "/pictures/b2.png",
+                "title": "Online Master's in Innovation and Entrepreneurship",
+                "text": "Drive innovation and develop an entrepreneurial mindset.",
+                "url": "https://www.coursera.org/degrees/omie",
+                "based":"www.t3n.de"
             },
             {
-                "img": "/pictures/b1.png",
-                "title": "Global Master of Business Administration (Global MBA)",
-                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
-                "url": "https://www.coursera.org/degrees/global-mba-macquarie",
-                "based":"www.morgenpost.de"
-            },
-            {
-                "img": "/pictures/b1.png",
-                "title": "Global Master of Business Administration (Global MBA)",
-                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
-                "url": "https://www.coursera.org/degrees/global-mba-macquarie",
-                "based":"www.morgenpost.de"
+                "img": "/pictures/b3.png",
+                "title": "Digital Transformation in Financial Services Specialization",
+                "text": "The Specialization explores the evolving world of finance, focusing on the changing dynamics caused by the conversion ....",
+                "url": "https://www.coursera.org/specializations/digital-transformation-financial-services",
+                "based":"www.digitalengineering.com"
             }
         ]
     },
@@ -36,32 +29,25 @@
         "based": "Tech",
         "cards": [
             {
-                "img": "/pictures/b1.png",
-                "title": "Global Master of Business Administration (Global MBA)",
-                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "img": "/pictures/t1.jpg",
+                "title": "Agile Software Development",
+                "text": "About this course: Software industry is going crazy on agile methods.  It is rapidly becoming the choice for software development where requirements are unpredictable or is expected to change over time. ",
                 "url": "https://www.coursera.org/degrees/global-mba-macquarie",
-                "based":"www.morgenpost.de"
+                "based":"www.agilesoftwareentwicklung.de"
             },
             {
-                "img": "/pictures/b1.png",
-                "title": "Global Master of Business Administration (Global MBA)",
-                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
-                "url": "https://www.coursera.org/degrees/global-mba-macquarie",
-                "based":"www.morgenpost.de"
+                "img": "/pictures/t2.jpg",
+                "title": "Software Development Lifecycle Specialization",
+                "text": "Drive innovation and develop an entrepreneurial mindset.",
+                "url": "https://www.coursera.org/degrees/omie",
+                "based":"www.t3n.de"
             },
             {
-                "img": "/pictures/b1.png",
-                "title": "Global Master of Business Administration (Global MBA)",
-                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
-                "url": "https://www.coursera.org/degrees/global-mba-macquarie",
-                "based":"www.morgenpost.de"
-            },
-            {
-                "img": "/pictures/b1.png",
-                "title": "Global Master of Business Administration (Global MBA)",
-                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
-                "url": "https://www.coursera.org/degrees/global-mba-macquarie",
-                "based":"www.morgenpost.de"
+                "img": "/pictures/t3.jpg",
+                "title": "Data in R",
+                "text": "The Specialization explores the evolving world of finance, focusing on the changing dynamics caused by the conversion of products ...",
+                "url": "https://www.coursera.org/specializations/digital-transformation-financial-services",
+                "based":"www.javasucks.com"
             }
         ]
     }

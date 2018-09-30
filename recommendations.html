@@ -17,19 +17,31 @@
     </style>
     <script>
         $(document).ready(function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var len = urlParams.get("length");
+            
             $.getJSON("data_rec.json", {},function (data) {
                 console.log(data)
                 var html = "";
+                if(len >= 1){
+                     data[0].cards.unshift({
+                    "img": "/pictures/stock.png",
+                    "title": "Financial Markets",
+                    "text": "An overview of the ideas, methods, and institutions that permit human society to manage risks and foster enterprise.",
+                    "url": "https://www.coursera.org/learn/financial-markets-global",
+                    "based":"www.economist.com/finance-and-economics/2018/09/29/american-startups-have-less-need-to-list-on-the-stockmarket"
+                     }) ;  
+                    }
                 for(var i = 0; i< data.length;i++){
                     html += createTopic(data[i]);
                 }
-                $('.data').html(html);
+                $('.data').html(html);                
             });
         });
 
         function createCardHtml(card) {
             var html = '<div class="card" style="max-width: 25rem;">'
-                + ' <img class="card-img-top" src="' + card.img + '" alt="Card image cap">'
+                + ' <img class="card-img-top" src="' + card.img + '" alt="Card image cap" style="height:80px">'
                 + ' <div class="card-body">'
                 + ' <h5 class="card-title">' + card.title + '</h5>'
                 + ' <p class="card-text">' + card.text + '</p>'
@@ -42,8 +54,8 @@
 
         function createTopic(topic) {
             var html = '<div class="row">'
-                + ' <h1 class="display-4">'
-                + ' <small>Recommendations based one your it interests</small>'
+                + ' <h1 class="display-4" style="margin-left:0.5em;">'
+                + ' <small>Recommendations based one your '+ topic.based+ ' interests</small>'
                 + '</h1>'
                 + '</div>'
                 + '<div class="card-group">';
@@ -59,69 +71,6 @@
 <body>
     <div class="container data">
 
-        <!--     <div class="row">
-            <h1 class="display-4">
-                <small>Recommendations based one your it interests</small>
-            </h1>
-        </div>
-        <div class="card-group">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <h1 class="display-4">
-                <small>Recommendations based one your Business interests</small>
-            </h1>
-        </div>
-        <div class="card-group">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/350x150" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>-->
     </div>
 </body>
 
