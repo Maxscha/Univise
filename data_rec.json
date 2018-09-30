@@ -1,0 +1,60 @@
+[
+    {
+        "based": "Business",
+        "cards": [
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            },
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            },
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            },
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            }
+        ]
+    },
+    {
+        "based": "Tech",
+        "cards": [
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            },
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            },
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            },
+            {
+                "img": "/pictures/b1.png",
+                "title": "Global Master of Business Administration (Global MBA)",
+                "text": "Get ready for the world of tomorrow: Transform your capabilities for the future of work with the Global MBA.",
+                "url": "https://www.coursera.org/degrees/global-mba-macquarie"
+            }
+        ]
+    }
+]
