@@ -12,6 +12,8 @@
     <script>
         var lastWeek = [3, 8, 8, 2, 7, 4];
         var lastMonth = [5, 7, 8, 2, 7, 4];
+        var lastYear = [5, 7, 8, 2, 6, 4];
+        var forever =[4, 3, 8, 2, 6, 4];
         $(document).ready(function () {
             var urlParams = new URLSearchParams(window.location.search);
             var len = urlParams.get("length");
@@ -51,7 +53,7 @@
             });
         });
         function updateLastWeek(){
-            myChart.data.datasets[0].data = lastMonth;
+            myChart.data.datasets[0].data = lastWeek;
             myChart.update();
         }
 
@@ -61,12 +63,12 @@
         }
 
         function updateLastYear(){
-            myChart.data.datasets[0].data = lastMonth;
+            myChart.data.datasets[0].data = lastYear;
             myChart.update();
         }
 
         function updateForever(){
-            myChart.data.datasets[0].data = lastMonth;
+            myChart.data.datasets[0].data = forever;
             myChart.update();
         }
     </script>
@@ -76,16 +78,16 @@
     <div class="container">
         <div class="row">
             <div class="btn-group btn-group-toggle text-center mx-auto" data-toggle="buttons">
-                <label class="btn btn-secondary active">
+                <label class="btn btn-secondary active" onclick="updateLastWeek();">
                     <input type="radio" name="options" id="option1" autocomplete="off" checked> Last Week
                 </label>
                 <label class="btn btn-secondary" onclick="updateLastMonth()">
-                    <input type="radio" name="options" id="option2" autocomplete="off" onclick="updateLastMonth();"> Last Month
+                    <input type="radio" name="options" id="option2" autocomplete="off" > Last Month
                 </label>
-                <label class="btn btn-secondary">
+                <label class="btn btn-secondary" onclick="updateLastYear();">
                     <input type="radio" name="options" id="option3" autocomplete="off"> Last Year
                 </label>
-                <label class="btn btn-secondary">
+                <label class="btn btn-secondary" onclick="updateForever();">
                     <input type="radio" name="options" id="option3" autocomplete="off"> Your Live
                 </label>
             </div>
